@@ -21,7 +21,7 @@ if status is-interactive
     alias clear "printf '\033[2J\033[3J\033[1;1H'"  # Полная очистка экрана
     alias grep='rg'          # ripgrep вместо grep
     alias ls='lsd'           # lsd вместо ls
-    alias pacman='sudo pacman'  # безопаснее: всегда с sudo
+    # alias pacman='sudo pacman'  # безопаснее: всегда с sudo
     alias q='qs -c ii'       # твоя кастомная команда
 
     # --- Абревиатуры: сокращения для часто вводимых команд ---
@@ -35,10 +35,11 @@ if status is-interactive
     abbr -a venv 'source .venv/bin/activate.fish'
 
     # Пакетный менеджер
-    abbr -a pcs  'pacman -S'
-    abbr -a pcr  'pacman -R'
-    abbr -a pcrhn 'pacman -Rhn'
-    abbr -a pcsyu 'pacman -Syu'
+    abbr -a spcs  'sudo pacman -S'
+    abbr -a spcss  'sudo pacman -Ss'
+    abbr -a spcr  'sudo pacman -R'
+    abbr -a spcrhn 'sudo pacman -Rhn'
+    abbr -a spcsyu 'sudo pacman -Syu'
 
     # Расширенные варианты ls
     abbr -a la 'ls -a'
