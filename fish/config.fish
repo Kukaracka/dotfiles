@@ -46,11 +46,11 @@ if status is-interactive
     abbr -a l 'ls -l'
     abbr -a lla 'ls -la'
     abbr -a lt 'ls --tree'
+
+    # Системные команды
+    abbr -a sdn 'shutdown now'
 end
 
 
 # --- Завершающие украшения (при старте терминала) ---
-pokemon-colorscripts --no-title -s -r | fastfetch \
-    -c ~/.config/fastfetch/config-pokemon.jsonc \
-    --logo-type file-raw --logo-height 10 --logo-width 5 --logo -
-
+pokemon-colorscripts --no-title -s -r | fastfetch -c $HOME/.config/fastfetch/config-pokemon.jsonc --logo-type file-raw --logo-height 10 --logo-width 5 --logo -

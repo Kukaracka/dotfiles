@@ -40,6 +40,7 @@ view/edit colors
 view/edit keyd config
 view/edit fish config
 view/edit GRUB config
+view/edit kitty config
 Configure Monitors (nwg-displays)
 GTK Settings (nwg-look)
 QT Apps Settings (qt6ct)
@@ -73,6 +74,7 @@ main() {
         "view/edit keyd config") file="/etc/keyd/default.conf" directory="/etc/keyd";;
         "view/edit GRUB config") file="/etc/default/grub" directory="/etc/default";;
         "view/edit fish config") file="$HOME/.config/fish/config.fish" directory="$HOME/.config/fish";;
+        "view/edit kitty config") file="$HOME/.config/kitty/kitty.conf" directory="$HOME/.config/kitty";;
 
         "Hyprland directory") directory="/home/kukaracka/.config/hypr" ;;
         "Configs directory") directory="/home/kukaracka/.config" ;;
