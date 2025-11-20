@@ -5,6 +5,6 @@ vim.b.autoformat = false
 vim.o.shell = "/usr/bin/fish"
 
 vim.g.snacks_animate = false
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 5
 
 vim.opt.shell = "/usr/bin/fish"

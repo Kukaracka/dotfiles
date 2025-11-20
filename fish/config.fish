@@ -47,6 +47,14 @@ if status is-interactive
     abbr -a lla 'ls -la'
     abbr -a lt 'ls --tree'
 
+    # Systemctl
+    abbr -a sss 'sudo systemctl start'
+    abbr -a ssst 'sudo systemctl stop'
+
+    # Copy 
+
+    abbr -a copy "wl-copy <"
+
     # Системные команды
     abbr -a sdn 'shutdown now'
 end
